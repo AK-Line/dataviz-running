@@ -44,7 +44,7 @@ const svg_c4 = d3
       const color2 = d3.scaleOrdinal().range(["#D7D7D7","#848484","#4E4E4E"]);
       const color3 = d3.scaleOrdinal().range(["#0AC4EC","#318CE7","#0F056B"]);
       const color4 = d3.scaleOrdinal().range(["#C2F732","#16B84E","#00561B"]);
-        function drawCircle(csv,color,svg){
+        function drawCircle(csv,color,svg_p){
         d3.csv(csv).then(function (d) {
           var inf = 0;
           var moy = 0;
@@ -76,7 +76,7 @@ const svg_c4 = d3
           const data_ready = pie(Object.entries(data));
 
           // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
-          svg
+          svg_p
             .selectAll("path")
             .data(data_ready)
             .join("path")
