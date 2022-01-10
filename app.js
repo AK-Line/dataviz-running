@@ -213,11 +213,11 @@ document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit
     .attr("y2", (d) => y(d));
 
   function updateViz(w) {
-    for (let i = 0; i < nb_id; i++) {
+    for (let i = 0; i < nbcourses; i++) {
       d3.select("#graph").remove();
     }
-    for (let i = 0; i < nb_id; i++) {
-      addMovingAverage(course[i], x, y, w, color(i + 1));
+    for (let i = 0; i < nbcourses; i++) {
+    addMovingAverage(course[i+start-1], x, y, w, color(i+start));
     }
   }
   d3.select("#slider").on("input", function () {
