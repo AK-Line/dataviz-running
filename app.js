@@ -258,7 +258,7 @@ function Lyonviz() {
     var st = document.getElementById("starting-course").value;
     document.getElementById("starting-course").max = 9 - nb;
     document.getElementById("number-course").max = 9 - st;
-    main("Lyon.csv",int(st),int(nb));
+    main("Lyon.csv",parseInt(st),parseInt(nb));
   } else {
     document.getElementById("number-course").max = 8;
     document.getElementById("number-course").value = 8;
@@ -284,7 +284,7 @@ function Niceviz() {
     console.log(st);
     document.getElementById("starting-course").max = 15 - nb;
     document.getElementById("number-course").max = 15 - st;
-    main("Nice.csv",int(st),int(nb));
+    main("Nice.csv",parseInt(st),parseInt(nb));
   } else {
     document.getElementById("number-course").max = 15;
     document.getElementById("number-course").value = 15;
@@ -308,7 +308,7 @@ function Parisviz() {
     var st = document.getElementById("starting-course").value;
     document.getElementById("starting-course").max = 12 - nb;
     document.getElementById("number-course").max = 12 - st;
-    main("Paris.csv",int(st),int(nb));
+    main("Paris.csv",parseInt(st),parseInt(nb));
   } else {
     document.getElementById("number-course").max = 11;
     document.getElementById("number-course").value = 11;
@@ -333,7 +333,7 @@ function Fjestadviz() {
     var st = document.getElementById("starting-course").value;
     document.getElementById("starting-course").max = 9 - nb;
     document.getElementById("number-course").max = 9 - st;
-    main("Fjestad.csv",int(st),int(nb));
+    main("Fjestad.csv",parseInt(st),parseInt(nb));
   } else {
     document.getElementById("number-course").max = 8;
     document.getElementById("number-course").value = 8;
