@@ -324,8 +324,8 @@ function Fjestadviz() {
 }
 
 function changedGraph() {
-  if (citySel = "Lyon"){Lyonviz();} 
-  if (citySel = "Nice"){Niceviz();} 
-  if (citySel = "Paris"){Parisviz();} 
-  if (citySel = "Fjestad"){Fjestadviz();} 
+  if (citySel == "Lyon"){Lyonviz();} 
+  if (citySel == "Nice"){Niceviz();} 
+  if (citySel == "Paris"){Parisviz();} 
+  if (citySel == "Fjestad"){Fjestadviz();} 
 }
