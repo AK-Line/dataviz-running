@@ -244,7 +244,7 @@ function Lyonviz() {
   document.getElementById("circle-2").style.backgroundColor = "#b2d5ff";
   document.getElementById("circle-3").style.backgroundColor = "#b2d5ff";
   document.getElementById("circle-4").style.backgroundColor = "#b2d5ff";*/
-  d3.select("svg").remove();
+  d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
     var nb = document.getElementById("number-course").value;
@@ -268,7 +268,7 @@ function Niceviz() {
   document.getElementById("circle-1").style.backgroundColor = "#b2d5ff";
   document.getElementById("circle-3").style.backgroundColor = "#b2d5ff";
   document.getElementById("circle-4").style.backgroundColor = "#b2d5ff";*/
-  d3.select("svg").remove();
+  d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
     var nb = document.getElementById("number-course").value;
@@ -292,7 +292,7 @@ function Parisviz() {
   document.getElementById("circle-2").style.backgroundColor = "#b2d5ff";
   document.getElementById("circle-1").style.backgroundColor = "#b2d5ff";
   document.getElementById("circle-4").style.backgroundColor = "#b2d5ff";*/
-  d3.select("svg").remove();
+  d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
     var nb = document.getElementById("number-course").value;
@@ -317,7 +317,7 @@ function Fjestadviz() {
   document.getElementById("circle-2").style.backgroundColor = "#b2d5ff";
   document.getElementById("circle-3").style.backgroundColor = "#b2d5ff";
   document.getElementById("circle-1").style.backgroundColor = "#b2d5ff";*/
-  d3.select("svg").remove();
+  d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
     var nb = document.getElementById("number-course").value;
