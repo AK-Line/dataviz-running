@@ -2,8 +2,8 @@ const width_c = 90,
         height_c = 90,
         margin_c = 4;
       radius = 10;
-      min_val = 5;
-      max_val = 5;
+      min_val = 8;
+      max_val = 15;
 
       const svg_c1 = d3
         .select("#circle-1")
