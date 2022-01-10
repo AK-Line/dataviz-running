@@ -161,12 +161,12 @@ document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit
       });
   }
   for (let i = 0; i < nbcourses; i++) {
-    console.log(i+start-1)
-    console.log(course[i+start-1])
-    addMovingAverage(course[i+start-1], x, y, 20, color(i+start));
+    console.log(i+start-1);
     console.log(i);
     console.log(nbcourses);
     console.log(start);
+    console.log(course[i+start-1]);
+    addMovingAverage(course[i+start-1], x, y, 20, color(i+start));
   }
 
   // axe x
