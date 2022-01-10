@@ -273,6 +273,8 @@ function Niceviz() {
   if (citySel == precSel) {
     var nb = document.getElementById("number-course").value;
     var st = document.getElementById("starting-course").value;
+    console.log(nb);
+    console.log(st);
     document.getElementById("starting-course").max = 15 - nb;
     document.getElementById("number-course").max = 15 - st;
     main("Nice.csv",st,nb);
