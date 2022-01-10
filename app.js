@@ -160,8 +160,8 @@ document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit
           .attr("stroke-width", 1.5);
       });
   }
-  for (let i = start-1; i < nbcourses+start-1; i++) {
-    addMovingAverage(course[i], x, y, 20, color(i + 1));
+  for (let i = 0; i < nbcourses; i++) {
+    addMovingAverage(course[i+start-1], x, y, 20, color(i+start));
   }
 
   // axe x
