@@ -160,7 +160,7 @@ document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit
           .attr("stroke-width", 1.5);
       });
   }
-  for (let i = start-1; i < nbcourses; i++) {
+  for (let i = start-1; i < nbcourses+start-1; i++) {
     addMovingAverage(course[i], x, y, 20, color(i + 1));
   }
 
