@@ -161,8 +161,8 @@ document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit
       });
   }
   for (let i = 0; i < nbcourses; i++) {
-    console.log(typeof(i));
-    console.log(typeof(start));
+    console.log(typeof i);
+    console.log(typeof start);
     console.log(i+start-1);
     console.log(i);
     console.log(nbcourses);
