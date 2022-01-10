@@ -151,7 +151,7 @@ document.getElementById("course_id").innerHTML = moveaverage[0].id;
 document.getElementById("cod-val").innerHTML = moveaverage[0].date;
 document.getElementById("cot-val").innerHTML = moveaverage[0].duree;
 document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit).toFixed(2);
-      document.getElementById("stats-course").backgroundColor = color[moveaverage[0].id + 1];
+      document.getElementById("stats-course").style.backgroundColor = color[moveaverage[0].id + 1];
       })
       .on("mouseout", function (d, i) {
         d3.select(this)
@@ -240,7 +240,10 @@ document.getElementById("starting-course").addEventListener("input", changedGrap
 
 function Lyonviz() {
   citySel = "Lyon"
-  document.getElementById("circle-1").innerHTML = "Click";
+  document.getElementById("circle-1").style.backgroundColor = "Yellow";
+  document.getElementById("circle-2").style.backgroundColor = "#b2d5ff";
+  document.getElementById("circle-3").style.backgroundColor = "#b2d5ff";
+  document.getElementById("circle-4").style.backgroundColor = "#b2d5ff";
 d3.select("svg").remove();
   svg = null;
   if (citySel == precSel) {
@@ -261,7 +264,10 @@ d3.select("svg").remove();
 
 function Niceviz() {
   citySel = "Nice"
-  document.getElementById("circle-2").innerHTML = "Click";
+  document.getElementById("circle-2").style.backgroundColor = "Yellow";
+  document.getElementById("circle-1").style.backgroundColor = "#b2d5ff";
+  document.getElementById("circle-3").style.backgroundColor = "#b2d5ff";
+  document.getElementById("circle-4").style.backgroundColor = "#b2d5ff";
  d3.select("svg").remove();
   svg = null;
   if (citySel == precSel) {
@@ -282,7 +288,10 @@ function Niceviz() {
 
 function Parisviz() {
   citySel = "Paris"
-  document.getElementById("circle-3").innerHTML = "Click";
+  document.getElementById("circle-3").style.backgroundColor = "Yellow";
+  document.getElementById("circle-2").style.backgroundColor = "#b2d5ff";
+  document.getElementById("circle-1").style.backgroundColor = "#b2d5ff";
+  document.getElementById("circle-4").style.backgroundColor = "#b2d5ff";
   d3.select("svg").remove();
   svg = null;
   if (citySel == precSel) {
@@ -304,7 +313,10 @@ function Parisviz() {
 
 function Fjestadviz() {
   citySel = "Fjestad"
-  document.getElementById("circle-4").innerHTML = "Click";
+  document.getElementById("circle-4").style.backgroundColor = "Yellow";
+  document.getElementById("circle-2").style.backgroundColor = "#b2d5ff";
+  document.getElementById("circle-3").style.backgroundColor = "#b2d5ff";
+  document.getElementById("circle-1").style.backgroundColor = "#b2d5ff";
   d3.select("svg").remove();
   svg = null;
   if (citySel == precSel) {
