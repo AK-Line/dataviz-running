@@ -71,7 +71,7 @@ const svg_c4 = d3
       
 
           // Création de l'échelle de couleur
-          const pie = d3.pie().value((d) => d[1]);
+          const pie = d3.pie().value((d) => d[1]).sort(null);
 
           const data_ready = pie(Object.entries(data));
 
