@@ -246,11 +246,11 @@ document.getElementById("number-course").addEventListener("input", changedGraph)
 document.getElementById("starting-course").addEventListener("input", changedGraph);
 
 function Lyonviz() {
-  citySel = "Lyon";/*
-  document.getElementById("circle-1").style.backgroundColor = "Yellow";
-  document.getElementById("circle-2").style.backgroundColor = "#b2d5ff";
-  document.getElementById("circle-3").style.backgroundColor = "#b2d5ff";
-  document.getElementById("circle-4").style.backgroundColor = "#b2d5ff";*/
+  citySel = "Lyon";
+  document.getElementById("circle-1").style.opacity = 1;
+  document.getElementById("circle-2").style.opacity = 0;
+  document.getElementById("circle-3").style.opacity = 0;
+  document.getElementById("circle-4").style.opacity = 0;
   d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
@@ -270,11 +270,11 @@ function Lyonviz() {
 }
 
 function Niceviz() {
-  citySel = "Nice";/*
-  document.getElementById("circle-2").style.backgroundColor = "Yellow";
-  document.getElementById("circle-1").style.backgroundColor = "#b2d5ff";
-  document.getElementById("circle-3").style.backgroundColor = "#b2d5ff";
-  document.getElementById("circle-4").style.backgroundColor = "#b2d5ff";*/
+  citySel = "Nice";
+  document.getElementById("circle-2").style.opacity = 1;
+  document.getElementById("circle-3").style.opacity = 0;
+  document.getElementById("circle-1").style.opacity = 0;
+  document.getElementById("circle-4").style.opacity = 0;
   d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
@@ -296,11 +296,11 @@ function Niceviz() {
 }
 
 function Parisviz() {
-  citySel = "Paris";/*
-  document.getElementById("circle-3").style.backgroundColor = "Yellow";
-  document.getElementById("circle-2").style.backgroundColor = "#b2d5ff";
-  document.getElementById("circle-1").style.backgroundColor = "#b2d5ff";
-  document.getElementById("circle-4").style.backgroundColor = "#b2d5ff";*/
+  citySel = "Paris";
+  document.getElementById("circle-3").style.opacity = 1;
+  document.getElementById("circle-2").style.opacity = 0;
+  document.getElementById("circle-1").style.opacity = 0;
+  document.getElementById("circle-4").style.opacity = 0;
   d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
@@ -321,11 +321,11 @@ function Parisviz() {
 }
 
 function Fjestadviz() {
-  citySel = "Fjestad";/*
-  document.getElementById("circle-4").style.backgroundColor = "Yellow";
-  document.getElementById("circle-2").style.backgroundColor = "#b2d5ff";
-  document.getElementById("circle-3").style.backgroundColor = "#b2d5ff";
-  document.getElementById("circle-1").style.backgroundColor = "#b2d5ff";*/
+  citySel = "Fjestad";
+  document.getElementById("circle-1").style.opacity = 1;
+  document.getElementById("circle-2").style.opacity = 0;
+  document.getElementById("circle-1").style.opacity = 0;
+  document.getElementById("circle-3").style.opacity = 0;
   d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
