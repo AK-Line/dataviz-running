@@ -123,6 +123,13 @@ d3.csv(csv).then(function (data) {
 
     return result;
   }
+  
+  function timeToString(time){
+    var tmp = time*60;
+    var minutes = Math.floor(tmp);
+    var seconds = Math.floor((tmp-minutes)*60);
+    return minutes + "mn " + seconds + "s";
+  }
 
   function addMovingAverage(data, x, y, N, color) {
     const line = d3
@@ -148,8 +155,8 @@ d3.csv(csv).then(function (data) {
           .attr("stroke-width", 2.5);
       
 document.getElementById("course_id").innerHTML = moveaverage[0].id;
-document.getElementById("cod-val").innerHTML = moveaverage[0].date;
-document.getElementById("cot-val").innerHTML = moveaverage[0].duree;
+document.getElementById("cod-val").innerHTML = moveaverage[0].date.format('YYYY-MM-DD');
+document.getElementById("cot-val").innerHTML = timeToString(moveaverage[0].duree);
 document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit).toFixed(2);
       document.getElementById("stats-course").style.backgroundColor = color[moveaverage[0].id + 1];
       })
