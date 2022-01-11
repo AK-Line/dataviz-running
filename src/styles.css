@@ -87,6 +87,11 @@ div.viz {
   background-color: #b2d5ff;
 }
 
+#wrapc-1,wrapc-2,wrapc-3,wrapc-4 {
+  background-color: teal;
+  opacity: 0
+}
+
 #circle-wrapper,
 #stats-circle {
   border-top: solid 3px #829cbc;
