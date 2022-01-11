@@ -238,15 +238,16 @@ main("Lyon.csv",1,8);
 var precSel = "Lyon"
 var citySel = "Lyon"
 
-document.getElementById("circle-1").addEventListener("click", Lyonviz);
-document.getElementById("circle-2").addEventListener("click", Niceviz);
-document.getElementById("circle-3").addEventListener("click", Parisviz);
-document.getElementById("circle-4").addEventListener("click", Fjestadviz);
+document.getElementById("wrapc-1").addEventListener("click", Lyonviz);
+document.getElementById("wrapc-2").addEventListener("click", Niceviz);
+document.getElementById("wrapc-3").addEventListener("click", Parisviz);
+document.getElementById("wrapc-4").addEventListener("click", Fjestadviz);
 document.getElementById("number-course").addEventListener("input", changedGraph);
 document.getElementById("starting-course").addEventListener("input", changedGraph);
 
 function Lyonviz() {
   citySel = "Lyon";
+  document.getElementById("place").innerHTML = "Lyon";
   document.getElementById("wrapc-1").style.backgroundColor = "#008080";
   document.getElementById("wrapc-2").style.backgroundColor = "#b2d5ff";
   document.getElementById("wrapc-3").style.backgroundColor = "#b2d5ff";
@@ -271,6 +272,7 @@ function Lyonviz() {
 
 function Niceviz() {
   citySel = "Nice";
+  document.getElementById("place").innerHTML = "Nice";
   document.getElementById("wrapc-2").style.backgroundColor = "#008080";
   document.getElementById("wrapc-4").style.backgroundColor = "#b2d5ff";
   document.getElementById("wrapc-3").style.backgroundColor = "#b2d5ff";
@@ -297,6 +299,7 @@ function Niceviz() {
 
 function Parisviz() {
   citySel = "Paris";
+  document.getElementById("place").innerHTML = "Paris";
   document.getElementById("wrapc-3").style.backgroundColor = "#008080";
   document.getElementById("wrapc-2").style.backgroundColor = "#b2d5ff";
   document.getElementById("wrapc-4").style.backgroundColor = "#b2d5ff";
@@ -322,6 +325,7 @@ function Parisviz() {
 
 function Fjestadviz() {
   citySel = "Fjestad";
+  document.getElementById("place").innerHTML = "Fjestad";
   document.getElementById("wrapc-4").style.backgroundColor = "#008080";
   document.getElementById("wrapc-2").style.backgroundColor = "#b2d5ff";
   document.getElementById("wrapc-3").style.backgroundColor = "#b2d5ff";
