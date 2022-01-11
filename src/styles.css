@@ -89,6 +89,11 @@ div.viz {
 
 #wrapc-1,#wrapc-2,#wrapc-3,#wrapc-4 {
   background-color: #b2d5ff;
+  border: solid 1px #829cbc
+}
+
+#circle-1,#circle-2,#circle-3,#circle-4 {
+  margin: 0 auto;
 }
 
 #circle-wrapper,
@@ -99,7 +104,7 @@ div.viz {
 #circle-wrapper,
 #st-cr-wrapper {
   border-left: solid 3px #829cbc;
-  border-right: dotted 3px #829cbc;
+  border-right: double 3px #829cbc;
 }
 
 #st-cr-wrapper,
