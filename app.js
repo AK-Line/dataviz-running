@@ -247,7 +247,7 @@ document.getElementById("starting-course").addEventListener("input", changedGrap
 
 function Lyonviz() {
   citySel = "Lyon";
-  document.getElementById("wrapc-1").style.backgroundColor = teal;
+  document.getElementById("wrapc-1").style.backgroundColor = "#008080";
   document.getElementById("wrapc-2").style.backgroundColor = "#b2d5ff";
   document.getElementById("wrapc-3").style.backgroundColor = "#b2d5ff";
   document.getElementById("wrapc-4").style.backgroundColor = "#b2d5ff";
@@ -271,7 +271,7 @@ function Lyonviz() {
 
 function Niceviz() {
   citySel = "Nice";
-  document.getElementById("wrapc-2").style.backgroundColor = teal;
+  document.getElementById("wrapc-2").style.backgroundColor = "#008080";
   document.getElementById("wrapc-4").style.backgroundColor = "#b2d5ff";
   document.getElementById("wrapc-3").style.backgroundColor = "#b2d5ff";
   document.getElementById("wrapc-1").style.backgroundColor = "#b2d5ff";
@@ -297,7 +297,7 @@ function Niceviz() {
 
 function Parisviz() {
   citySel = "Paris";
-  document.getElementById("wrapc-3").style.backgroundColor = teal;
+  document.getElementById("wrapc-3").style.backgroundColor = "#008080";
   document.getElementById("wrapc-2").style.backgroundColor = "#b2d5ff";
   document.getElementById("wrapc-4").style.backgroundColor = "#b2d5ff";
   document.getElementById("wrapc-1").style.backgroundColor = "#b2d5ff";
@@ -322,7 +322,7 @@ function Parisviz() {
 
 function Fjestadviz() {
   citySel = "Fjestad";
-  document.getElementById("wrapc-4").style.backgroundColor = teal;
+  document.getElementById("wrapc-4").style.backgroundColor = "#008080";
   document.getElementById("wrapc-2").style.backgroundColor = "#b2d5ff";
   document.getElementById("wrapc-3").style.backgroundColor = "#b2d5ff";
   document.getElementById("wrapc-1").style.backgroundColor = "#b2d5ff";
