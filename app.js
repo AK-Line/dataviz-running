@@ -155,7 +155,7 @@ d3.csv(csv).then(function (data) {
           .attr("stroke-width", 2.5);
       
 document.getElementById("course_id").innerHTML = moveaverage[0].id;
-document.getElementById("cod-val").innerHTML = Date(moveaverage[0].date).getDate() + "/" + Date(moveaverage[0].date).getMonth() + "/" + Date(moveaverage[0].date).getYear();
+document.getElementById("cod-val").innerHTML = moment(moveaverage[0].date).format('YYYY-MM-DD');
 document.getElementById("cot-val").innerHTML = timeToString(moveaverage[0].duree);
 document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit).toFixed(2);
       document.getElementById("stats-course").style.backgroundColor = color[moveaverage[0].id + 1];
