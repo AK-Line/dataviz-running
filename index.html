@@ -23,7 +23,7 @@
         </div>
         <div class="col-6" id="title">
           <div class="inner">
-            <h1>Visualisation de données de course à pied</h1>
+            <h1>Visualization of a runner's data</h1>
           </div>
         </div>
         <div class="col" id="names">
@@ -63,7 +63,7 @@
             <div class="col-6" id="wrapc-4">Fjestad<div id="circle-4"></div></div>
           </div>
           <div class="row" id="minsel">
-            <div class="col" id="maxtext">minval :</div>
+            <div class="col" id="maxtext">Lower threshold :</div>
             <div class="col" id="minslide">
             <input
                   id="slider_min"
@@ -77,7 +77,7 @@
             <div class="col" id="minval">8</div>
           </div>
           <div class="row" id="maxsel">
-            <div class="col" id="maxtext">maxval :</div>
+            <div class="col" id="maxtext">Upper threshold :</div>
             <div class="col" id="maxslide">
             <input
                   id="slider_max"
@@ -96,12 +96,12 @@
             <h2 id="place">Lyon<h2>
           </div>
           <div class="row" id="circle-length">
-            <div class="col-sm-8 keys" id="cl-name">Longueur du tracé :<br></div>
+            <div class="col-sm-8 keys" id="cl-name">Length of the run :<br></div>
             <div class="col-2 values" id="cl-val">??</div>
             <div class="col-2 unit" id="cl-unit">m</div>
           </div>
           <div class="row" id="circle-number">
-            <div class="col-sm-8 keys" id="cn-name">Nombre de courses :</div>
+            <div class="col-sm-8 keys" id="cn-name">Number of runs :</div>
             <div class="col-4 values" id="cn-val">??</div>
           </div>
           <!--<div class="row" id="circle-period">
@@ -109,7 +109,7 @@
             <div class="col-4 values" id="cp-val">?? - ??</div>
           </div>-->
           <div class="row" id="circle-average">
-            <div class="col-sm-8 keys" id="ca-name">Vitesse moyenne :</div>
+            <div class="col-sm-8 keys" id="ca-name">Average speed :</div>
             <div class="col-2 values" id="ca-val">??</div>
             <div class="col-2 unit" id="ca-unit">km/h</div>
           </div>
@@ -126,11 +126,11 @@
                 <div class="col-4 values" id="cod-val">??</div>
               </div>
               <div class="row" id="course-time">
-                <div class="col-md-8 keys" id="cot-name">Temps :</div>
+                <div class="col-md-8 keys" id="cot-name">Time :</div>
                 <div class="col-4 values" id="cot-val">??</div>
               </div>
               <div class="row" id="course-vm">
-                <div class="col-md-8 keys" id="cov-name">VM :</div>
+                <div class="col-md-8 keys" id="cov-name">Speed :</div>
                 <div class="col-2 values" id="cov-val">??</div>
                 <div class="col-2 unit" id="cov-unit">km/h</div>
               </div>
@@ -146,7 +146,7 @@
           </div>
           <div class="row viz" id="course-tick">
             <div class="col-6" id="number-choice">
-            Choix de 
+            Choice of
             <input
               id="number-course"
               type="number"
@@ -155,10 +155,10 @@
               max="8"
               style="width: 40px;"
             />
-            courses,
+            runs,
             </div>
             <div class="col-6" id="starting-choice">
-            A partir de la
+            starting from the #
             <input
               id="starting-course"
               type="number"
@@ -167,15 +167,15 @@
               max="1"
               style="width: 40px;"
             />
-            eme
+            run
             </div>
           </div>
           <div class="row viz" id="course-radios">
             <div class="col-3" id="radio-text">
-                Lissage : 
+                Smoothing : 
             </div>
             <div class="col-9" id="slider-zone">
-              Faible
+              Low
                 <input
                   id="slider"
                   type="range"
@@ -184,7 +184,7 @@
                   max="150"
                   step="1"
                 />
-                Elevé
+                High
               <!--<div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="2">
                 <label class="form-check-label" for="inlineRadio1">Faible</label>
