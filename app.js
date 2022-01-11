@@ -247,10 +247,10 @@ document.getElementById("starting-course").addEventListener("input", changedGrap
 
 function Lyonviz() {
   citySel = "Lyon";
-  document.getElementById("circle-1").style.opacity = 1;
-  document.getElementById("circle-2").style.opacity = 0;
-  document.getElementById("circle-3").style.opacity = 0;
-  document.getElementById("circle-4").style.opacity = 0;
+  document.getElementById("wrapc-1").style.opacity = 1;
+  document.getElementById("wrapc-2").style.opacity = 0;
+  document.getElementById("wrapc-3").style.opacity = 0;
+  document.getElementById("wrapc-4").style.opacity = 0;
   d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
@@ -271,10 +271,10 @@ function Lyonviz() {
 
 function Niceviz() {
   citySel = "Nice";
-  document.getElementById("circle-2").style.opacity = 1;
-  document.getElementById("circle-3").style.opacity = 0;
-  document.getElementById("circle-1").style.opacity = 0;
-  document.getElementById("circle-4").style.opacity = 0;
+  document.getElementById("wrapc-2").style.opacity = 1;
+  document.getElementById("wrapc-1").style.opacity = 0;
+  document.getElementById("wrapc-3").style.opacity = 0;
+  document.getElementById("wrapc-4").style.opacity = 0;
   d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
@@ -297,10 +297,10 @@ function Niceviz() {
 
 function Parisviz() {
   citySel = "Paris";
-  document.getElementById("circle-3").style.opacity = 1;
-  document.getElementById("circle-2").style.opacity = 0;
-  document.getElementById("circle-1").style.opacity = 0;
-  document.getElementById("circle-4").style.opacity = 0;
+  document.getElementById("wrapc-3").style.opacity = 1;
+  document.getElementById("wrapc-2").style.opacity = 0;
+  document.getElementById("wrapc-1").style.opacity = 0;
+  document.getElementById("wrapc-4").style.opacity = 0;
   d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
@@ -322,10 +322,10 @@ function Parisviz() {
 
 function Fjestadviz() {
   citySel = "Fjestad";
-  document.getElementById("circle-1").style.opacity = 1;
-  document.getElementById("circle-2").style.opacity = 0;
-  document.getElementById("circle-1").style.opacity = 0;
-  document.getElementById("circle-3").style.opacity = 0;
+  document.getElementById("wrapc-4").style.opacity = 1;
+  document.getElementById("wrapc-2").style.opacity = 0;
+  document.getElementById("wrapc-3").style.opacity = 0;
+  document.getElementById("wrapc-1").style.opacity = 0;
   d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
