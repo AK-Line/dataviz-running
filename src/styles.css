@@ -38,6 +38,10 @@ background-position:100% 0%;
   max-width: 100%;
 }
 
+#logo {
+  background-color: white;
+}
+
 #title {
   border: solid #1d3461;
   border-radius: 10px;
@@ -88,11 +92,18 @@ div.viz {
 }
 
 #wrapc-1,#wrapc-2,#wrapc-3,#wrapc-4 {
-  background-color: #b2d5ff;
   border: solid 1px #829cbc;
   display: flex;
   justify-content: center;
 }
+
+#wrapc-2,#wrapc-3,#wrapc-4 {
+    background-color: #b2d5ff;
+}
+  
+#wrapc-1{
+  background-color: #008080;
+  }
 
 /*#circle-1,#circle-2,#circle-3,#circle-4 {
 }*/
