@@ -82,7 +82,7 @@ const svg_c4 = d3
             .join("path")
             .attr(
               "d",
-              d3.arc().innerRadius(40).outerRadius(32) // This is the size of the donut hole
+              d3.arc().innerRadius(40).outerRadius(24) // This is the size of the donut hole
             )
             .attr("fill", (d) => color(d.data[0]))
             .attr("stroke", "black")
