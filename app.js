@@ -258,7 +258,7 @@ document.getElementById("wrapc-1").addEventListener("click", Lyonviz);
 document.getElementById("wrapc-2").addEventListener("click", Niceviz);
 document.getElementById("wrapc-3").addEventListener("click", Parisviz);
 document.getElementById("wrapc-4").addEventListener("click", Fjestadviz);
-for (let i = 0;i < 15; i++){
+for (let i = 1;i < 15; i++){
   document.getElementById("cb" + i).addEventListener("click", changedGraph);
 }
 
@@ -273,14 +273,14 @@ function Lyonviz() {
   svg = null;
   if (citySel == precSel) {
     var checks = [];
-    for (let i = 0; i < 9; i++) {
+    for (let i = 1; i < 9; i++) {
       if (document.getElementById("cb" + i).checked) {
         checks.push(i);
       }
     }
   } else {
     var checks = [];
-    for (let i = 0; i < 9; i++) {
+    for (let i = 1; i < 9; i++) {
       document.getElementById("wc" + i).style.display = "float";
       document.getElementById("cb" + i).checked = true;
       checks.push(i);
@@ -304,14 +304,14 @@ function Niceviz() {
   svg = null;
   if (citySel == precSel) {
     var checks = [];
-    for (let i = 0; i < 15; i++) {
+    for (let i = 1; i < 15; i++) {
       if (document.getElementById("cb" + i).checked) {
         checks.push(i);
       }
     }
   } else {
     var checks = [];
-    for (let i = 0; i < 15; i++) {
+    for (let i = 1; i < 15; i++) {
       document.getElementById("wc" + i).style.display = "float";
       document.getElementById("cb" + i).checked = true;
       checks.push(i);
@@ -335,14 +335,14 @@ function Parisviz() {
   svg = null;
   if (citySel == precSel) {
     var checks = [];
-    for (let i = 0; i < 12; i++) {
+    for (let i = 1; i < 12; i++) {
       if (document.getElementById("cb" + i).checked) {
         checks.push(i);
       }
     }
   } else {
     var checks = [];
-    for (let i = 0; i < 12; i++) {
+    for (let i = 1; i < 12; i++) {
       document.getElementById("wc" + i).style.display = "float";
       document.getElementById("cb" + i).checked = true;
       checks.push(i);
@@ -366,14 +366,14 @@ function Fjestadviz() {
   svg = null;
   if (citySel == precSel) {
     var checks = [];
-    for (let i = 0; i < 9; i++) {
+    for (let i = 1; i < 9; i++) {
       if (document.getElementById("cb" + i).checked) {
         checks.push(i);
       }
     }
   } else {
     var checks = [];
-    for (let i = 0; i < 9; i++) {
+    for (let i = 1; i < 9; i++) {
       document.getElementById("wc" + i).style.display = "float";
       document.getElementById("cb" + i).checked = true;
       checks.push(i);
