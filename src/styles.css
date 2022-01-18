@@ -173,6 +173,11 @@ div.values {
   text-align: left;
 }
 
+.checkboxes {
+     display: inline;
+     float: left;
+}
+
 .horizontalGrid {
         stroke: grey;
         stroke-opacity: 0.5;
