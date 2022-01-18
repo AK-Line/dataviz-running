@@ -165,13 +165,13 @@ div.viz {
   text-align: center;
 }
 
-div.keys {
+/*div.keys {
   text-align: right;
 }
 
 div.values {
   text-align: left;
-}
+}*/
 
 .checkboxes {
      display: inline;
