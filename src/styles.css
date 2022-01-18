@@ -167,11 +167,12 @@ div.viz {
 
 /*div.keys {
   text-align: right;
-}
+}*/
 
 div.values {
-  text-align: left;
-}*/
+  display: inline;
+  float: left;
+}
 
 div.unit {
   display: inline;
