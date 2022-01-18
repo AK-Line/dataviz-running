@@ -167,16 +167,19 @@ document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit
           .attr("stroke-width", 1.5);
       });
   }
-  for (let i = 0; i < nbcourses; i++) {
-    console.log(typeof i);
-    console.log(typeof start);
-    console.log(i+start-1);
-    console.log(i);
-    console.log(nbcourses);
-    console.log(start);
-    console.log(course[i+start-1]);
-    addMovingAverage(course[i+start-1], x, y, 20, color(i+start));
-  }
+  checks.forEach((check) => {
+     addMovingAverage(course[check-1], x, y, 20, color(check));
+   });
+  //for (let i = 0; i < nbcourses; i++) {
+    //console.log(typeof i);
+    //console.log(typeof start);
+    //console.log(i+start-1);
+    //console.log(i);
+    //console.log(nbcourses);
+    //console.log(start);
+    //console.log(course[i+start-1]);
+    //addMovingAverage(course[i+start-1], x, y, 20, color(i+start));
+  //}
 
   // axe x
   svg
@@ -246,7 +249,7 @@ document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit
 });
 }
 
-main("Lyon.csv",1,8);
+main("Lyon.csv",[1,2,3,4,5,6,7,8]);
 
 var precSel = "Lyon"
 var citySel = "Lyon"
@@ -270,7 +273,7 @@ function Lyonviz() {
   svg = null;
   if (citySel == precSel) {
     var checks = [];
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 9; i++) {
       if (document.getElementById("cb" + i).checked) {
         checks.push(i);
       }
@@ -301,7 +304,7 @@ function Niceviz() {
   svg = null;
   if (citySel == precSel) {
     var checks = [];
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 15; i++) {
       if (document.getElementById("cb" + i).checked) {
         checks.push(i);
       }
@@ -363,7 +366,7 @@ function Fjestadviz() {
   svg = null;
   if (citySel == precSel) {
     var checks = [];
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 9; i++) {
       if (document.getElementById("cb" + i).checked) {
         checks.push(i);
       }
