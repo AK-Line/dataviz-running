@@ -260,7 +260,7 @@ for (let i = 1; i < 9; i++) {
 for (let i = 9; i < 15; i++) {
   document.getElementById("wc" + i).style.display = "none";
 }
-main("Lyon.csv",checks);
+main("data/Lyon.csv",checks);
 
 var precSel = "Lyon"
 var citySel = "Lyon"
@@ -302,7 +302,7 @@ function Lyonviz() {
       document.getElementById("wc" + i).style.display = "none";
     }
   }
-  main("Lyon.csv",checks);
+  main("data/Lyon.csv",checks);
   precSel = citySel;
 }
 
@@ -333,7 +333,7 @@ function Niceviz() {
       document.getElementById("wc" + i).style.display = "none";
     }
   }
-  main("Nice.csv",checks);
+  main("data/Nice.csv",checks);
   precSel = citySel;
 }
 
@@ -364,7 +364,7 @@ function Parisviz() {
       document.getElementById("wc" + i).style.display = "none";
     }
   }
-  main("Paris.csv",checks);
+  main("data/Paris.csv",checks);
   precSel = citySel;
 }
 
@@ -395,7 +395,7 @@ function Fjestadviz() {
       document.getElementById("wc" + i).style.display = "none";
     }
   }
-  main("Fjestad.csv",checks);
+  main("data/Fjestad.csv",checks);
   precSel = citySel; 
 }
 
