@@ -269,25 +269,24 @@ function Lyonviz() {
   d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
-    var checks = []
+    var checks = [];
     for (let i = 0; i < 12; i++) {
       if (document.getElementById("cb" + i).checked) {
-        checks.push(i)
+        checks.push(i);
       }
     }
-    main("Lyon.csv",checks);
   } else {
-    var checks = []
+    var checks = [];
     for (let i = 0; i < 9; i++) {
       document.getElementById("wc" + i).style.display = "float";
       document.getElementById("cb" + i).checked = true;
-      checks.push(i)
+      checks.push(i);
     }
     for (let i = 9; i < 15; i++) {
       document.getElementById("wc" + i).style.display = "none";
     }
-    main("Lyon.csv",checks);
   }
+  main("Lyon.csv",checks);
   precSel = citySel;
 }
 
@@ -301,24 +300,24 @@ function Niceviz() {
   d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
-    var checks = []
+    var checks = [];
     for (let i = 0; i < 12; i++) {
       if (document.getElementById("cb" + i).checked) {
-        checks.push(i)
+        checks.push(i);
       }
-    main("Nice.csv",checks);
+    }
   } else {
-    var checks = []
+    var checks = [];
     for (let i = 0; i < 15; i++) {
       document.getElementById("wc" + i).style.display = "float";
       document.getElementById("cb" + i).checked = true;
-      checks.push(i)
+      checks.push(i);
     }
     for (let i = 15; i < 15; i++) {
       document.getElementById("wc" + i).style.display = "none";
     }
-    main("Nice.csv",checks);
   }
+  main("Nice.csv",checks);
   precSel = citySel;
 }
 
@@ -332,24 +331,24 @@ function Parisviz() {
   d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
-    var checks = []
+    var checks = [];
     for (let i = 0; i < 12; i++) {
       if (document.getElementById("cb" + i).checked) {
-        checks.push(i)
+        checks.push(i);
       }
-    main("Paris.csv",checks);
+    }
   } else {
-    var checks = []
+    var checks = [];
     for (let i = 0; i < 12; i++) {
       document.getElementById("wc" + i).style.display = "float";
       document.getElementById("cb" + i).checked = true;
-      checks.push(i)
+      checks.push(i);
     }
     for (let i = 12; i < 15; i++) {
       document.getElementById("wc" + i).style.display = "none";
     }
-    main("Paris.csv",checks);
   }
+  main("Paris.csv",checks);
   precSel = citySel;
 }
 
@@ -363,24 +362,24 @@ function Fjestadviz() {
   d3.select("#svg").remove();
   svg = null;
   if (citySel == precSel) {
-    var checks = []
+    var checks = [];
     for (let i = 0; i < 12; i++) {
       if (document.getElementById("cb" + i).checked) {
-        checks.push(i)
+        checks.push(i);
       }
-    main("Fjestad.csv",checks);
+    }
   } else {
-    var checks = []
+    var checks = [];
     for (let i = 0; i < 9; i++) {
       document.getElementById("wc" + i).style.display = "float";
       document.getElementById("cb" + i).checked = true;
-      checks.push(i)
+      checks.push(i);
     }
     for (let i = 9; i < 15; i++) {
       document.getElementById("wc" + i).style.display = "none";
     }
-    main("Fjestad.csv",checks);
   }
+  main("Fjestad.csv",checks);
   precSel = citySel; 
 }
 
