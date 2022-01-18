@@ -177,12 +177,13 @@ div.viz {
 div.values {
   display: inline;
   float: left;
+  margin-right: 5px;
 }
 
-div.unit {
+/*div.unit {
   display: inline;
   float: left;
-}
+}*/
 
 .checkboxes {
      display: inline;
