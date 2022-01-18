@@ -290,7 +290,7 @@ function Lyonviz() {
   } else {
     var checks = [];
     for (let i = 1; i < 9; i++) {
-      document.getElementById("wc" + i).style.display = "float";
+      document.getElementById("wc" + i).style.display = "inline";
       document.getElementById("cb" + i).checked = true;
       checks.push(i);
     }
@@ -321,7 +321,7 @@ function Niceviz() {
   } else {
     var checks = [];
     for (let i = 1; i < 15; i++) {
-      document.getElementById("wc" + i).style.display = "float";
+      document.getElementById("wc" + i).style.display = "inline";
       document.getElementById("cb" + i).checked = true;
       checks.push(i);
     }
@@ -352,7 +352,7 @@ function Parisviz() {
   } else {
     var checks = [];
     for (let i = 1; i < 12; i++) {
-      document.getElementById("wc" + i).style.display = "float";
+      document.getElementById("wc" + i).style.display = "inline";
       document.getElementById("cb" + i).checked = true;
       checks.push(i);
     }
@@ -383,7 +383,7 @@ function Fjestadviz() {
   } else {
     var checks = [];
     for (let i = 1; i < 9; i++) {
-      document.getElementById("wc" + i).style.display = "float";
+      document.getElementById("wc" + i).style.display = "inline";
       document.getElementById("cb" + i).checked = true;
       checks.push(i);
     }
