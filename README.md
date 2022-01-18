@@ -7,15 +7,19 @@ This project provides a d3 visualisation for running statistics. Any runner or j
 ### Sources
 ##### About the Project
 Data Vizualization course: https://lyondataviz.github.io/teaching/lyon1-m2/2021/
+
 State of Art doc (French): https://docs.google.com/document/d/1JKWGbZGySsai9PxZMyV4gffwNSrQUPoDNeW_J6vUB8s/edit?usp=sharing
 
 ##### JavaScript librairies
 D3.js: https://d3js.org/
+
 moment.js: https://momentjs.com/
 
 ##### State of art
 https://gametraka.zendesk.com/hc/en-us/articles/216779817-Performance-statistics
+
 https://gametraka.zendesk.com/hc/en-us/articles/360001015976
+
 https://www.graphmyrun.com/
 
 ##### Data collection
