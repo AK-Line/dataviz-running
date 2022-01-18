@@ -170,7 +170,7 @@ document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit
   }
   checks.forEach((check) => {
      updd = addMovingAverage(course[check-1], x, y, 20, color(check));
-     document.getElementById("cb" + check).innerHTML = updd + "  "; 
+     document.getElementById("tc" + check).innerHTML = updd + "  "; 
    });
   //for (let i = 0; i < nbcourses; i++) {
     //console.log(typeof i);
