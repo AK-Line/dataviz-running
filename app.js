@@ -251,7 +251,7 @@ document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit
 
 var checks = [];
 for (let i = 1; i < 9; i++) {
-  document.getElementById("wc" + i).style.display = "float";
+  document.getElementById("wc" + i).style.display = "inline";
   document.getElementById("cb" + i).checked = true;
   checks.push(i);
 }
