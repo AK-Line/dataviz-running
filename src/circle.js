@@ -90,10 +90,10 @@ const svg_c4 = d3
             .attr("class", "donut");
         });
       }
-      drawCircle("Lyon.csv",color1,svg_c1);
-      drawCircle("Nice.csv",color1,svg_c2);
-      drawCircle("Paris.csv",color1,svg_c3);
-      drawCircle("Fjestad.csv",color1,svg_c4)
+      drawCircle("data/Lyon.csv",color1,svg_c1);
+      drawCircle("data/Nice.csv",color1,svg_c2);
+      drawCircle("data/Paris.csv",color1,svg_c3);
+      drawCircle("data/Fjestad.csv",color1,svg_c4)
       }
       drawPie(min_val, max_val);
       d3.select("#slider_min").on("input", function () {
