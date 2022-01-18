@@ -255,7 +255,7 @@ document.getElementById("wrapc-1").addEventListener("click", Lyonviz);
 document.getElementById("wrapc-2").addEventListener("click", Niceviz);
 document.getElementById("wrapc-3").addEventListener("click", Parisviz);
 document.getElementById("wrapc-4").addEventListener("click", Fjestadviz);
-for (let i = 0,i < 15, i++){
+for (let i = 0;i < 15; i++){
   document.getElementById("cb" + i).addEventListener("click", changedGraph);
 }
 
