@@ -176,6 +176,7 @@ div.values {
 .checkboxes {
      display: inline;
      float: left;
+     margin-right: 10px;
 }
 
 .horizontalGrid {
