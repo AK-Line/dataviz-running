@@ -166,9 +166,11 @@ document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit
           .attr("opacity", "0.65")
           .attr("stroke-width", 1.5);
       });
+    return moment(moveaverage[0].date).format('YYYY-MM-DD');
   }
   checks.forEach((check) => {
-     addMovingAverage(course[check-1], x, y, 20, color(check));
+     updd = addMovingAverage(course[check-1], x, y, 20, color(check));
+     document.getElementById("cb" + check).innerHTML = updd; 
    });
   //for (let i = 0; i < nbcourses; i++) {
     //console.log(typeof i);
