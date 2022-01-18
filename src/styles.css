@@ -44,11 +44,14 @@ background-position:100% 0%;
   max-width: 100%;
 }
 
-#namebox, logo {
+#namebox, #logo {
   text-align: center;
   border-radius: 10px;
-  color: white;
+  color: black;
   background-color: #b2d5ff;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /*#title {
