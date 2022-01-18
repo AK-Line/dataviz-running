@@ -249,7 +249,16 @@ document.getElementById("cov-val").innerHTML = d3.mean(moveaverage, (d) => d.vit
 });
 }
 
-main("Lyon.csv",[1,2,3,4,5,6,7,8]);
+var checks = [];
+for (let i = 1; i < 9; i++) {
+  document.getElementById("wc" + i).style.display = "float";
+  document.getElementById("cb" + i).checked = true;
+  checks.push(i);
+}
+for (let i = 9; i < 15; i++) {
+  document.getElementById("wc" + i).style.display = "none";
+}
+main("Lyon.csv",checks);
 
 var precSel = "Lyon"
 var citySel = "Lyon"
