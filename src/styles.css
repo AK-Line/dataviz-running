@@ -173,6 +173,11 @@ div.values {
   text-align: left;
 }*/
 
+div.unit {
+  display: inline;
+  float: left;
+}
+
 .checkboxes {
      display: inline;
      float: left;
