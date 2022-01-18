@@ -136,6 +136,11 @@ div.viz {
   border-bottom: solid 1px #829cbc;
 }
 
+#cid {
+  text-align:left;
+  display:inline-block;
+}
+
 #course {
   border-top: solid 1px #829cbc;
 }
