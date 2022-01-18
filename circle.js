@@ -36,10 +36,10 @@ const svg_c4 = d3
         .attr("transform", `translate(${width_c / 2},${height_c / 2})`);
 
       function drawPie(min_val, max_val) {
-        var output = document.getElementById("minval");
-        output.innerHTML = min_val;
-        var output = document.getElementById("maxval");
-        output.innerHTML = max_val;
+        //var output = document.getElementById("minval");
+        //output.innerHTML = min_val;
+        //var output = document.getElementById("maxval");
+        //output.innerHTML = max_val;
         const color1 = d3.scaleOrdinal().range(["#F3D617","#EF9B0F","#E63201"]);
       const color2 = d3.scaleOrdinal().range(["#D7D7D7","#848484","#4E4E4E"]);
       const color3 = d3.scaleOrdinal().range(["#0AC4EC","#318CE7","#0F056B"]);
@@ -91,9 +91,9 @@ const svg_c4 = d3
         });
       }
       drawCircle("Lyon.csv",color1,svg_c1);
-      drawCircle("Nice.csv",color2,svg_c2);
-      drawCircle("Paris.csv",color3,svg_c3);
-      drawCircle("Fjestad.csv",color4,svg_c4)
+      drawCircle("Nice.csv",color1,svg_c2);
+      drawCircle("Paris.csv",color1,svg_c3);
+      drawCircle("Fjestad.csv",color1,svg_c4)
       }
       drawPie(min_val, max_val);
       d3.select("#slider_min").on("input", function () {
