@@ -21,12 +21,18 @@ background-position:100% 0%;
   margin-top: 10px;
 }
 
+#first {
+  background-color: #1f487e;
+  background-image: linear-gradient(#1d3461, #1f487e);
+}
+
 #title {
   max-height: 250px;
 }
 
 #logo,
-#names {
+#names,
+#title {
   display: flex;
   align-items: center;
 }
@@ -38,19 +44,20 @@ background-position:100% 0%;
   max-width: 100%;
 }
 
-#logo {
-  background-color: white;
+#namebox, logo {
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  background-color: #b2d5ff;
 }
 
-#title {
+/*#title {
   border: solid #1d3461;
   border-radius: 10px;
   border-width: 5px;
   background-color: #1f487e;
   background-image: linear-gradient(#1d3461, #1f487e);
-  display: flex;
-  align-items: center;
-}
+}*/
 
 h1 {
   font-size: 40px;
@@ -65,13 +72,6 @@ p {
 
 #downnumber {
    text-align: right; 
-}
-
-#namebox {
-  text-align: center;
-  border-radius: 10px;
-  color: white;
-  background-color: #1d3461;
 }
 
 div.inner.names,
@@ -113,48 +113,58 @@ div.viz {
 }*/
 
 #circle-wrapper,
-#stats-circle {
-  border-top: solid 3px #829cbc;
+#stats-circle,
+#supp-text{
+  border-top: solid 5px #829cbc;
 }
 
 #circle-wrapper,
 #st-cr-wrapper {
-  border-left: solid 3px #829cbc;
   border-right: double 3px #829cbc;
+}
+
+#circle-wrapper,
+#st-cr-wrapper,
+#supp-text-2 {
+  border-left: solid 5px #829cbc;
 }
 
 #st-cr-wrapper,
 #course-radios {
+  border-bottom: solid 5px #829cbc;
+}
+
+#course-tick,
+#course-graph,
+#course-radios,
+#supp-text,
+#supp-text-2 {
+  border-right: solid 5px #829cbc;
+}
+
+#stats-circle {
+  border-right: solid 3px #829cbc;
+}
+
+#overview, #supp-text-2 {
   border-bottom: solid 3px #829cbc;
 }
 
-#stats-circle,
-#course-tick,
-#course-graph,
-#course-radios {
-  border-right: solid #829cbc;
-  border-right-width: 3px;
-}
-
-#overview {
-  border-bottom: solid 1px #829cbc;
-}
-
-#course {
-  border-top: solid 1px #829cbc;
+#course, #supp-text-2 {
+  border-top: solid 3px #829cbc;
 }
 
 #course-tick,
 #course-graph,
 #course-radios {
-  border-left: solid #829cbc 3px;
+  border-left: solid #829cbc 5px;
 }
 
 #circle-wrapper {
   border-top-left-radius: 10px;
 }
 
-#stats-circle {
+#supp-text {
   border-top-right-radius: 10px;
 }
 
