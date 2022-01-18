@@ -96,6 +96,10 @@ p.explain {
   text-align: justify;
 }
 
+input[type='number']{
+    width: 36px;
+} 
+
 div.viz {
   background-color: #b2d5ff;
 }
