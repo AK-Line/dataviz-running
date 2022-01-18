@@ -272,6 +272,8 @@ document.getElementById("wrapc-4").addEventListener("click", Fjestadviz);
 for (let i = 1;i < 15; i++){
   document.getElementById("cb" + i).addEventListener("click", changedGraph);
 }
+document.getElementById("cball").addEventListener("click", selAll);
+document.getElementById("cbnone").addEventListener("click", selNone);
 
 function Lyonviz() {
   citySel = "Lyon";
@@ -404,3 +406,18 @@ function changedGraph() {
   if (citySel == "Paris"){Parisviz();} 
   if (citySel == "Fjestad"){Fjestadviz();} 
 }
+
+function selAll() {
+  for (let i = 1; i < 15; i++) {
+      document.getElementById("cb" + i).checked = true;
+    }
+    changedGraph();
+}
+
+function selNone() {
+  for (let i = 1; i < 15; i++) {
+      document.getElementById("cb" + i).checked = false;
+    }
+    changedGraph();
+}
+  
