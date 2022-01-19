@@ -23,7 +23,7 @@ svg
   .style("font-family", "Raleway")
   .style("font-weight", "300")
   .style("font-size", "24px")
-  .text("Evolution de la vitesse au cours du trajet");
+  .text("Evolution of the runner's speed");
 
 const parseTime = d3.timeParse("%d/%m/%Y");
 const dateFormat = d3.timeFormat("%d/%m/%Y");
