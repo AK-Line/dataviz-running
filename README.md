@@ -1,8 +1,6 @@
 # Running statistics monitoring visualisation
 Graphic Visualization from data gathered from a member of the group / Représentation graphique des footings d'un membre du groupe
 
-![Alt text](14-thumbnail.png?raw=true "Title")
-
 ## Website 
 https://ak-line.github.io/dataviz-running/
 
@@ -35,7 +33,9 @@ https://www.graphmyrun.com/
 https://play.google.com/store/apps/details?id=com.zeopoxa.fitness.running&hl=fr&gl=US
 
 
-## Images 
+## Gallery
+### Thumbnail for Dataviz course's gallery
+![Alt text](14-thumbnail.png?raw=true "Title")
 ### Circle selection
 ![Alt text](Cercles.png?raw=true "Title")
 ### Graph selection
