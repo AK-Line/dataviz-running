@@ -5,7 +5,9 @@ Représentation graphique des footings d'un membre du groupe / Graphic Visualiza
 https://ak-line.github.io/dataviz-running/
 
 ## Description
-This project provides a d3 visualisation for running statistics. Any runner or jogger may find it useful, as it enables to reprensent graphically and with numbers different statistics of your runnings. Thanks to it, you can get informations about the different itineraries you run, and you can also compare several runs from the same itinerary, to follow your performances.
+En - This project provides a d3 visualisation for running statistics. Any runner or jogger may find it useful, as it enables to compare different runs of a same track, but also compare overall performance track-by-track. Run selection and smoothing enables specific comparisons as well as different approaches (instantaneous vs average performance). This project is a demo, you can't actually put your own data and expect it to work ! This is due to the very specific data cleaning we've done, that is hard to make a script of, for track recognition in particular.
+
+Fr - Ce projet présente une visualisation des statistiques d'un coureur par le biais de d3. Il permet de comparer différentes courses d'un même trajet, et permet aussi d'avoir une comparaison globale entre trajets différents. La sélection de courses et le lissage permettent de comparer des courses spécifiques entre elles, mais aussi de choisir des approches différentes (performance instantanée ou moyenne). Ce projet est une demo, il ne vous permet pas d'entrer directement vos données personnelles. En effet, nous avons dû opérer un nettoyage des données difficilement adaptable en script pour des raisons de reconnaissance des tracés notamment.
 
 ## Sources
 ### About the Project
