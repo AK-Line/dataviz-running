@@ -20,6 +20,8 @@ D3.js: https://d3js.org/
 
 moment.js: https://momentjs.com/
 
+bootstrap : https://getbootstrap.com/
+
 ### State of art
 https://gametraka.zendesk.com/hc/en-us/articles/216779817-Performance-statistics
 
